@@ -1,5 +1,5 @@
 advancements/
-data/
+/data
 DIM1/
 DIM-1/
 playerdata/
@@ -10,4 +10,5 @@ stats/
 *.dat
 *.dat_old
 *.lock
-*.txt
+standardoptions.txt
+icon.png

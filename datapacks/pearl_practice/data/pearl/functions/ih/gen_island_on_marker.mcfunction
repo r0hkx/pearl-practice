@@ -1,0 +1,1 @@
+execute at @e[tag=island_marker] in the_end run function pearl:ih/gen_random_island
