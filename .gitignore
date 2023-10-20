@@ -1,14 +1,14 @@
 advancements/
 /data
-DIM1/
 DIM-1/
 playerdata/
 poi/
-region/
+/region
 speedrunigt/
 stats/
 *.dat
 *.dat_old
 *.lock
+*.mca
 standardoptions.txt
-icon.png
+!level.dat

@@ -1,1 +1,1 @@
-execute in the_end run tp @a 0 101 0
+execute in the_end run tp @a 400000 101 0

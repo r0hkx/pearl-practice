@@ -48,7 +48,7 @@ execute unless score int iBwpResetSlot matches 0.. run scoreboard players set in
 execute unless score b bBwpInventory matches 0.. run scoreboard players set b bBwpInventory 0
 
 forceload add 1008 0 976 48
-execute in the_end run forceload add 0 0 0 0
+execute in the_end run forceload add 400000 0 400000 0
 
 difficulty peaceful
 
