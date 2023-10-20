@@ -1,3 +1,7 @@
+scoreboard players operation int iIhLastX = int iIhCurrentX 
+scoreboard players operation int iIhLastY = int iIhCurrentY 
+scoreboard players operation int iIhLastZ = int iIhCurrentZ 
+
 summon pig 0 0 0 {Tags:["random_uuid_x"]}
 execute store result score int iRNG run data get entity @e[type=pig,tag=random_uuid_x,limit=1] UUID[0] 1
 scoreboard players operation int iRNG %= kIhRngRangeX integer

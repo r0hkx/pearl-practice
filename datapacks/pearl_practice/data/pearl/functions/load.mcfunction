@@ -8,6 +8,9 @@ scoreboard objectives add iIhRandomIsland dummy
 scoreboard objectives add iIhCurrentX dummy
 scoreboard objectives add iIhCurrentY dummy
 scoreboard objectives add iIhCurrentZ dummy
+scoreboard objectives add iIhLastX dummy
+scoreboard objectives add iIhLastY dummy
+scoreboard objectives add iIhLastZ dummy
 scoreboard objectives add iRNG dummy
 scoreboard objectives add iIhScore dummy
 
@@ -49,6 +52,7 @@ execute unless score b bBwpInventory matches 0.. run scoreboard players set b bB
 
 forceload add 1008 0 976 48
 execute in the_end run forceload add 400000 0 400000 0
+execute in the_end run forceload add 0 0 0 0
 
 difficulty peaceful
 
