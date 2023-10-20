@@ -24,6 +24,7 @@ scoreboard objectives add droppedGrayDye minecraft.dropped:minecraft.gray_dye
 scoreboard objectives add droppedLimeDye minecraft.dropped:minecraft.lime_dye
 scoreboard objectives add usedXPBottle minecraft.used:minecraft.experience_bottle
 scoreboard objectives add droppedXPBottle minecraft.dropped:minecraft.experience_bottle
+scoreboard objectives add deathCount deathCount
 
 scoreboard objectives add integer dummy
 
@@ -49,12 +50,19 @@ execute unless score b bBwpInventory matches 0.. run scoreboard players set b bB
 forceload add 1008 0 976 48
 execute in the_end run forceload add 0 0 0 0
 
+difficulty peaceful
+
 gamerule fallDamage false
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
+gamerule doImmediateRespawn true
 
 time set 6000
 
 weather clear
+
+setblock 0 99 0 diamond_block
+setblock 0 101 1 minecraft:birch_sign[rotation=8,waterlogged=false]{Color:"black",Text4:'{"clickEvent":{"action":"run_command","value":"function pearl:bwp/start"},"text":"Pearl Technique"}',Text3:'{"text":"Bedwars Practice"}',Text2:'{"text":""}',Text1:'{"bold":true,"color":"green","text":"Start"}'}
+setblock -1 101 0 minecraft:birch_sign[rotation=12,waterlogged=false]{Color:"black",Text4:'{"clickEvent":{"action":"run_command","value":"function pearl:ih/start"},"text":"End Island"}',Text3:'{"text":"Hopping"}',Text2:'{"text":""}',Text1:'{"bold":true,"color":"green","text":"Start"}'}
 
 schedule function pearl:delayed_load 1s
