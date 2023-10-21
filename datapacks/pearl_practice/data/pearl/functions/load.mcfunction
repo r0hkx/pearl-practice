@@ -40,8 +40,6 @@ scoreboard players set kIhRngRangeZ integer 100
 scoreboard players set kIhHalfRngX integer 50
 scoreboard players set kIhHalfRngY integer 10
 scoreboard players set kIhHalfRngZ integer 50
-scoreboard players set kIhMinDist integer 30
-scoreboard players set kIhMaxDist integer 100
 
 execute unless score int iBwpPearlSlot matches 0.. run scoreboard players set int iBwpPearlSlot 1
 execute unless score int iBwpBlocksSlot matches 0.. run scoreboard players set int iBwpBlocksSlot 4

@@ -3,7 +3,7 @@ functional requirements before release:
 - [ ] confirm proper landing
 - [ ] score display
 - [ ] sounds
-- [ ] min and max distance
+- [x] min and max distance
 - [ ] fall detection
 
 things that would be nice:
