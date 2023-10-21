@@ -7,4 +7,6 @@ execute in overworld run tp @a 0 100 0 0 0
 clear @a
 kill @e[type=ender_pearl]
 
+title @a times 0 70 20
+
 scoreboard players set b bPlayingIh 0

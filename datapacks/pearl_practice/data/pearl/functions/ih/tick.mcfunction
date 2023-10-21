@@ -10,9 +10,11 @@ execute as @e[tag=island_marker] at @s unless block ~ ~7 ~ minecraft:end_stone a
 
 kill @e[type=ender_dragon]
 kill @e[type=item]
-kill @e[type=minecraft:experience_bottle]
+kill @e[type=egg]
 
 execute if entity @e[type=ender_pearl] store result score int iIhPearlY run data get entity @e[type=ender_pearl,limit=1] Pos[1]
 
 execute if score int iIhPearlY < int iIhDeathY run function pearl:ih/missed_pearl
 execute if score int yPos < int iIhDeathY run function pearl:ih/fail
+
+title @a actionbar {"score":{"name":"int","objective":"iIhScore"}}

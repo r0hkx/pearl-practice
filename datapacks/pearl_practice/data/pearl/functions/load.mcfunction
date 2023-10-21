@@ -16,7 +16,7 @@ scoreboard objectives add iIhScore dummy
 scoreboard objectives add iIhDeathY dummy
 scoreboard objectives add iIhPearlSlot dummy
 scoreboard objectives add iIhHCSlot dummy
-scoreboard objectives add iIhResetSlot dummy
+scoreboard objectives add iIhExitSlot dummy
 scoreboard objectives add iIhPearlY dummy
 
 scoreboard players set int iIhPearlY 100
@@ -43,6 +43,8 @@ scoreboard objectives add droppedRedstone minecraft.dropped:minecraft.redstone
 scoreboard objectives add droppedGunpowder minecraft.dropped:minecraft.gunpowder
 scoreboard objectives add usedXPBottle minecraft.used:minecraft.experience_bottle
 scoreboard objectives add droppedXPBottle minecraft.dropped:minecraft.experience_bottle
+scoreboard objectives add usedEgg minecraft.used:minecraft.egg
+scoreboard objectives add droppedEgg minecraft.dropped:minecraft.egg
 scoreboard objectives add deathCount deathCount
 
 scoreboard objectives add integer dummy
@@ -65,7 +67,7 @@ execute unless score int iBwpResetSlot matches 0.. run scoreboard players set in
 
 execute unless score int iIhPearlSlot matches 0.. run scoreboard players set int iIhPearlSlot 1
 execute unless score int iIhHCSlot matches 0.. run scoreboard players set int iIhHCSlot 8
-execute unless score int iIhResetSlot matches 0.. run scoreboard players set int iIhResetSlot 9
+execute unless score int iIhExitSlot matches 0.. run scoreboard players set int iIhExitSlot 9
 
 execute unless score b bBwpInventory matches 0.. run scoreboard players set b bBwpInventory 0
 execute unless score b bIhInventory matches 0.. run scoreboard players set b bIhInventory 0

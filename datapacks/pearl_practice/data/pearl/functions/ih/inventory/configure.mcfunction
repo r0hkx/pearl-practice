@@ -23,15 +23,15 @@ execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 6b,
 execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 7b, tag:{tag:"hc"}}] run scoreboard players set int iIhHCSlot 8
 execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 8b, tag:{tag:"hc"}}] run scoreboard players set int iIhHCSlot 9
 
-execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 0b, tag:{tag:"reset"}}] run scoreboard players set int iIhResetSlot 1
-execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 1b, tag:{tag:"reset"}}] run scoreboard players set int iIhResetSlot 2
-execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 2b, tag:{tag:"reset"}}] run scoreboard players set int iIhResetSlot 3
-execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 3b, tag:{tag:"reset"}}] run scoreboard players set int iIhResetSlot 4
-execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 4b, tag:{tag:"reset"}}] run scoreboard players set int iIhResetSlot 5
-execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 5b, tag:{tag:"reset"}}] run scoreboard players set int iIhResetSlot 6
-execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 6b, tag:{tag:"reset"}}] run scoreboard players set int iIhResetSlot 7
-execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 7b, tag:{tag:"reset"}}] run scoreboard players set int iIhResetSlot 8
-execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 8b, tag:{tag:"reset"}}] run scoreboard players set int iIhResetSlot 9
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 0b, tag:{tag:"exit"}}] run scoreboard players set int iIhExitSlot 1
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 1b, tag:{tag:"exit"}}] run scoreboard players set int iIhExitSlot 2
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 2b, tag:{tag:"exit"}}] run scoreboard players set int iIhExitSlot 3
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 3b, tag:{tag:"exit"}}] run scoreboard players set int iIhExitSlot 4
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 4b, tag:{tag:"exit"}}] run scoreboard players set int iIhExitSlot 5
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 5b, tag:{tag:"exit"}}] run scoreboard players set int iIhExitSlot 6
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 6b, tag:{tag:"exit"}}] run scoreboard players set int iIhExitSlot 7
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 7b, tag:{tag:"exit"}}] run scoreboard players set int iIhExitSlot 8
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 8b, tag:{tag:"exit"}}] run scoreboard players set int iIhExitSlot 9
 
 execute if score b bIhInventory matches 1 run clear @a
 
