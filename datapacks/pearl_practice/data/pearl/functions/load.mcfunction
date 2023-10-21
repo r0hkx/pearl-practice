@@ -17,6 +17,9 @@ scoreboard objectives add iIhDeathY dummy
 scoreboard objectives add iIhPearlSlot dummy
 scoreboard objectives add iIhHCSlot dummy
 scoreboard objectives add iIhResetSlot dummy
+scoreboard objectives add iIhPearlY dummy
+
+scoreboard players set int iIhPearlY 100
 
 scoreboard objectives add bPlayingBwp dummy
 scoreboard objectives add bLanded dummy

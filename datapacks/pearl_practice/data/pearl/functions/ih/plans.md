@@ -4,7 +4,7 @@ functional requirements before release:
 - [ ] score display
 - [ ] sounds
 - [x] min and max distance
-- [ ] fall detection
+- [x] fall detection
 
 things that would be nice:
 - hardcore
