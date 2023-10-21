@@ -6,3 +6,8 @@ execute as @e[tag=island_marker] at @s unless block ~ ~7 ~ minecraft:end_stone a
 execute as @e[tag=island_marker] at @s unless block ~ ~7 ~ minecraft:end_stone at @s run function pearl:ih/gen_random_island 
 execute if score b bIhLanded matches 1 run function pearl:ih/landed
 kill @e[type=ender_dragon]
+execute if score int yPos < int iIhDeathY run function pearl:ih/fail
+function pearl:ih/settings/tick
+kill @e[type=item]
+kill @e[type=minecraft:experience_bottle]
+
