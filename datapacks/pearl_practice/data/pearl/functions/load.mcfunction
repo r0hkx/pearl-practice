@@ -19,6 +19,7 @@ scoreboard objectives add bLanded dummy
 scoreboard objectives add bBwpCheckpoints dummy
 scoreboard objectives add bBwpInventory dummy
 scoreboard objectives add bPlayingIh dummy
+scoreboard objectives add bIhOnGround dummy
 scoreboard objectives add bIhLanded dummy
 
 execute unless score b bBwpCheckpoints matches 0.. run scoreboard players set b bBwpCheckpoints 0

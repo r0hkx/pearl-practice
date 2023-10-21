@@ -1,6 +1,6 @@
 functional requirements before release:
 - [x] remove end island
-- [ ] confirm proper landing
+- [x] confirm proper landing
 - [ ] score display
 - [ ] sounds
 - [x] min and max distance
