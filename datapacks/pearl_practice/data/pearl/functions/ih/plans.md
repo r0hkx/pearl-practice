@@ -1,29 +1,29 @@
 functional requirements before release:
-1. remove end island
-2. confirm proper landing
-3. score display
-4. sounds
-5. min and max distance
-6. fall detection
+- [x] remove end island
+- [ ] confirm proper landing
+- [ ] score display
+- [ ] sounds
+- [ ] min and max distance
+- [ ] fall detection
 
 things that would be nice:
-1. hardcore
+- hardcore
     miss pearl = reset
-2. inventory
-3. pearl timeout
-4. saved high score
-5. distance scoring
+- inventory
+- pearl timeout
+- saved high score
+- distance scoring
     score not based on successful throws, but total distance traveled. weighting longer pearl throws more highly
-6. pearls thrown stat
+- pearls thrown stat
     at reset or death
 
 extras/cosmetics (no order):
-a. pearl trails
+- pearl trails
     customizable items or particles that follow the pearl
-b. accuracy rating based on distance from pearl to center of island
+- accuracy rating based on distance from pearl to center of island
     couldn't be from center because you usually want to aim pearl at the back (missed pearl voids, close pearl hits and kills you)
-c. ridable pearls
-d. practice mode   
+- ridable pearls
+- practice mode   
     user selected distance
     persistant pearl trails
     

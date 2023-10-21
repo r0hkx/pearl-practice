@@ -8,6 +8,4 @@ function pearl:ih/spread_island
 execute if score int iIhScore matches 0 run schedule function pearl:ih/gen_island_on_marker 1t
 execute if score int iIhScore matches 1.. run function pearl:ih/gen_island_on_marker
 
-# execute at @e[tag=old_island_marker] if entity @e[tag=island_marker,distance=..30] if entity @e[tag=island_marker,distance=100..] run 
-
 give @a ender_pearl
