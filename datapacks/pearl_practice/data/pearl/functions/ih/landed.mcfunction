@@ -7,6 +7,8 @@ execute at @e[tag=island_marker] run summon minecraft:armor_stand ~ ~ ~ {Tags:["
 function pearl:ih/spread_island
 execute if score int iIhScore matches 0 run schedule function pearl:ih/gen_island_on_marker 1t
 execute if score int iIhScore matches 1.. run function pearl:ih/gen_island_on_marker
+execute at @e[tag=island_marker] run function pearl:sounds/sound3
+# execute unless score int iIhScore matches 0 at @e[tag=island_marker] run function pearl:sounds/sound3
 
 execute as @a run function pearl:ih/inventory/give
 

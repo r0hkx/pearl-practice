@@ -12,4 +12,6 @@ title @a times 0 1 200
 
 schedule function pearl:ih/reset_fail_mode 1t
 
+gamemode adventure @a
+
 function pearl:ih/tp
