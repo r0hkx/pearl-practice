@@ -40,10 +40,12 @@ scoreboard objectives add bIhInventory dummy
 scoreboard objectives add bIhHC dummy
 scoreboard objectives add bIhHcScore dummy
 scoreboard objectives add bIhSmallScore dummy
+scoreboard objectives add bIhZeroScore dummy
 
 execute unless score b bBwpCheckpoints matches 0.. run scoreboard players set b bBwpCheckpoints 0
 execute unless score b bIhHC matches 0.. run scoreboard players set b bIhHC 0
 execute unless score b bIhSmallScore matches 0.. run scoreboard players set b bIhSmallScore 1
+execute unless score b bIhZeroScore matches 0.. run scoreboard players set b bIhZeroScore 0
 scoreboard players operation b bIhHcScore = b bIhHc
 
 # 0 - none

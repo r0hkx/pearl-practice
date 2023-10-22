@@ -1,5 +1,6 @@
 scoreboard players set b bIhLanded 0
-execute unless score int iIhScore matches 0 run scoreboard players add int iIhScore 1
+execute if score b bIhZeroScore matches 0 run scoreboard players add int iIhScore 1
+execute if score b bIhZeroScore matches 1 run scoreboard players set b bIhZeroScore 0
 
 execute at @e[tag=old_island_marker] run fill ~-10 ~ ~-10 ~10 ~15 ~10 air
 kill @e[tag=old_island_marker]
