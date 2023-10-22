@@ -23,6 +23,16 @@ execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 6b,
 execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 7b, tag:{tag:"hc"}}] run scoreboard players set int iIhHCSlot 8
 execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 8b, tag:{tag:"hc"}}] run scoreboard players set int iIhHCSlot 9
 
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 0b, tag:{tag:"small_score"}}] run scoreboard players set int iIhScoreSlot 1
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 1b, tag:{tag:"small_score"}}] run scoreboard players set int iIhScoreSlot 2
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 2b, tag:{tag:"small_score"}}] run scoreboard players set int iIhScoreSlot 3
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 3b, tag:{tag:"small_score"}}] run scoreboard players set int iIhScoreSlot 4
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 4b, tag:{tag:"small_score"}}] run scoreboard players set int iIhScoreSlot 5
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 5b, tag:{tag:"small_score"}}] run scoreboard players set int iIhScoreSlot 6
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 6b, tag:{tag:"small_score"}}] run scoreboard players set int iIhScoreSlot 7
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 7b, tag:{tag:"small_score"}}] run scoreboard players set int iIhScoreSlot 8
+execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 8b, tag:{tag:"small_score"}}] run scoreboard players set int iIhScoreSlot 9
+
 execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 0b, tag:{tag:"exit"}}] run scoreboard players set int iIhExitSlot 1
 execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 1b, tag:{tag:"exit"}}] run scoreboard players set int iIhExitSlot 2
 execute if score b bIhInventory matches 1 if data entity @s Inventory[{Slot: 2b, tag:{tag:"exit"}}] run scoreboard players set int iIhExitSlot 3

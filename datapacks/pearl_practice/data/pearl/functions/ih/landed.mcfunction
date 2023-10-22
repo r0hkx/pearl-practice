@@ -12,3 +12,5 @@ execute as @a run function pearl:ih/inventory/give
 
 scoreboard players operation int iIhDeathY = int iIhCurrentY
 scoreboard players operation int iIhDeathY -= k20 integer
+
+execute if score b bIhHC matches 0 run scoreboard players set b bIhHcScore 0

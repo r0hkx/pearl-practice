@@ -17,6 +17,7 @@ scoreboard objectives add iIhDeathY dummy
 scoreboard objectives add iIhPearlSlot dummy
 scoreboard objectives add iIhHCSlot dummy
 scoreboard objectives add iIhExitSlot dummy
+scoreboard objectives add iIhScoreSlot dummy
 scoreboard objectives add iIhPearlY dummy
 
 scoreboard players set int iIhPearlY 100
@@ -30,9 +31,13 @@ scoreboard objectives add bIhOnGround dummy
 scoreboard objectives add bIhLanded dummy
 scoreboard objectives add bIhInventory dummy
 scoreboard objectives add bIhHC dummy
+scoreboard objectives add bIhHcScore dummy
+scoreboard objectives add bIhSmallScore dummy
 
 execute unless score b bBwpCheckpoints matches 0.. run scoreboard players set b bBwpCheckpoints 0
 execute unless score b bIhHC matches 0.. run scoreboard players set b bIhHC 0
+execute unless score b bIhSmallScore matches 0.. run scoreboard players set b bIhSmallScore 0
+scoreboard players operation b bIhHcScore = b bIhHc
 
 scoreboard objectives add xPos dummy
 scoreboard objectives add yPos dummy
@@ -45,6 +50,8 @@ scoreboard objectives add usedXPBottle minecraft.used:minecraft.experience_bottl
 scoreboard objectives add droppedXPBottle minecraft.dropped:minecraft.experience_bottle
 scoreboard objectives add usedEgg minecraft.used:minecraft.egg
 scoreboard objectives add droppedEgg minecraft.dropped:minecraft.egg
+scoreboard objectives add droppedBook minecraft.dropped:minecraft.book
+scoreboard objectives add droppedEBook minecraft.dropped:minecraft.enchanted_book
 scoreboard objectives add deathCount deathCount
 
 scoreboard objectives add integer dummy
@@ -66,6 +73,7 @@ execute unless score int iBwpCheckPSlot matches 0.. run scoreboard players set i
 execute unless score int iBwpResetSlot matches 0.. run scoreboard players set int iBwpResetSlot 9
 
 execute unless score int iIhPearlSlot matches 0.. run scoreboard players set int iIhPearlSlot 1
+execute unless score int iIhScoreSlot matches 0.. run scoreboard players set int iIhScoreSlot 7
 execute unless score int iIhHCSlot matches 0.. run scoreboard players set int iIhHCSlot 8
 execute unless score int iIhExitSlot matches 0.. run scoreboard players set int iIhExitSlot 9
 

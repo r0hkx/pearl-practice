@@ -17,4 +17,7 @@ execute if entity @e[type=ender_pearl] store result score int iIhPearlY run data
 execute if score int iIhPearlY < int iIhDeathY run function pearl:ih/missed_pearl
 execute if score int yPos < int iIhDeathY run function pearl:ih/fail
 
-title @a actionbar {"score":{"name":"int","objective":"iIhScore"}}
+execute if score int iIhScore matches 0 if score b bIhHC matches 1 run scoreboard players set b bIhHcScore 1
+
+title @a title {"score":{"name":"int","objective":"iIhScore"}}
+
