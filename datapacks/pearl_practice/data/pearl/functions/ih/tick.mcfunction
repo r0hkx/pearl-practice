@@ -19,5 +19,11 @@ execute if score int yPos < int iIhDeathY run function pearl:ih/fail
 
 execute if score int iIhScore matches 0 if score b bIhHC matches 1 run scoreboard players set b bIhHcScore 1
 
-title @a title {"score":{"name":"int","objective":"iIhScore"}}
+execute if score b bIhHcScore matches 0 if score b bIhSmallScore matches 0 run title @a title {"score":{"name":"int","objective":"iIhScore"}}
+execute if score b bIhHcScore matches 1 if score b bIhSmallScore matches 0 run title @a title {"score":{"name":"int","objective":"iIhScore"},"color":"dark_red"}
+execute if score b bIhHcScore matches 0 if score b bIhSmallScore matches 1 run title @a actionbar [{"text":"Score: ","color":"dark_gray"},{"score":{"name":"int","objective":"iIhScore"}}]
+execute if score b bIhHcScore matches 1 if score b bIhSmallScore matches 1 run title @a actionbar [{"text":"Score: ","color":"dark_gray"},{"score":{"name":"int","objective":"iIhScore"},"color":"dark_red"}]
+
+execute if score b bIhSmallScore matches 0 run title @a actionbar ""
+execute if score b bIhSmallScore matches 1 run title @a title "" 
 
