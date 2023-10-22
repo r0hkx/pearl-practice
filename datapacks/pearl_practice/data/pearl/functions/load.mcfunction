@@ -21,9 +21,11 @@ scoreboard objectives add iIhScoreSlot dummy
 scoreboard objectives add iIhPearlY dummy
 scoreboard objectives add iIhHighScore dummy
 scoreboard objectives add iIhHighHCScore dummy
+scoreboard objectives add iIhSpireIterator dummy
 
 execute unless score int iIhHighScore matches 0.. run scoreboard players set int iIhHighScore 0
 execute unless score int iIhHighHCScore matches 0.. run scoreboard players set int iIhHighHCScore 0
+execute unless score int iIhSpireIterator matches 0.. run scoreboard players set int iIhSpireIterator 0
 
 scoreboard players set int iIhPearlY 100
 
@@ -77,6 +79,7 @@ scoreboard players set kIhRngRangeZ integer 100
 scoreboard players set kIhHalfRngX integer 50
 scoreboard players set kIhHalfRngY integer 10
 scoreboard players set kIhHalfRngZ integer 50
+scoreboard players set kIhSpireCount integer 30
 
 execute unless score int iBwpPearlSlot matches 0.. run scoreboard players set int iBwpPearlSlot 1
 execute unless score int iBwpBlocksSlot matches 0.. run scoreboard players set int iBwpBlocksSlot 4

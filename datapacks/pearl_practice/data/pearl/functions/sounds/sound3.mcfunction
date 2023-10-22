@@ -1,1 +1,1 @@
-playsound minecraft:block.respawn_anchor.set_spawn record @a ~ ~ ~ 10 2
+playsound minecraft:block.respawn_anchor.set_spawn record @a ~ ~ ~ 4 2
