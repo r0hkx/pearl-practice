@@ -11,7 +11,7 @@ things that would be nice:
     miss pearl = reset
 - [x] inventory
 - [ ] pearl timeout
-- [ ] saved high score
+- [x] saved high score
 - [ ] distance scoring
     score not based on successful throws, but total distance traveled. weighting longer pearl throws more highly
 - [ ] pearls thrown stat
@@ -26,6 +26,8 @@ extras/cosmetics (no order):
 - practice mode   
     user selected distance
     persistant pearl trails
+- "hot pearl" mode 
+    limited time to throw pearl
     
 
 speedrun mode:

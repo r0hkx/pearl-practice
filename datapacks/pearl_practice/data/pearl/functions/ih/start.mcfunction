@@ -10,4 +10,6 @@ execute at @e[tag=island_marker] in the_end run function pearl:ih/gen_random_isl
 
 title @a times 0 1 200
 
+schedule function pearl:ih/reset_fail_mode 1t
+
 function pearl:ih/tp

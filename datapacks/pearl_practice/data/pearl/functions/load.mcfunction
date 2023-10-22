@@ -19,6 +19,11 @@ scoreboard objectives add iIhHCSlot dummy
 scoreboard objectives add iIhExitSlot dummy
 scoreboard objectives add iIhScoreSlot dummy
 scoreboard objectives add iIhPearlY dummy
+scoreboard objectives add iIhHighScore dummy
+scoreboard objectives add iIhHighHCScore dummy
+
+execute unless score int iIhHighScore matches 0.. run scoreboard players set int iIhHighScore 0
+execute unless score int iIhHighHCScore matches 0.. run scoreboard players set int iIhHighHCScore 0
 
 scoreboard players set int iIhPearlY 100
 
@@ -38,6 +43,12 @@ execute unless score b bBwpCheckpoints matches 0.. run scoreboard players set b 
 execute unless score b bIhHC matches 0.. run scoreboard players set b bIhHC 0
 execute unless score b bIhSmallScore matches 0.. run scoreboard players set b bIhSmallScore 0
 scoreboard players operation b bIhHcScore = b bIhHc
+
+# 0 - none
+# 1 - fell into void
+# 2 - missed pearl
+scoreboard objectives add eFailMode dummy
+execute unless score e eFailMode matches 0.. run scoreboard players set e eFailMode 0
 
 scoreboard objectives add xPos dummy
 scoreboard objectives add yPos dummy
