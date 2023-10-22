@@ -1,0 +1,9 @@
+execute if score int iIhHCSlot matches 1 run replaceitem entity @a hotbar.0 redstone{tag:"hc",display:{Name:'[{"text":"Hardcore Mode","color":"dark_red","italic":false}]'}}
+execute if score int iIhHCSlot matches 2 run replaceitem entity @a hotbar.1 redstone{tag:"hc",display:{Name:'[{"text":"Hardcore Mode","color":"dark_red","italic":false}]'}}
+execute if score int iIhHCSlot matches 3 run replaceitem entity @a hotbar.2 redstone{tag:"hc",display:{Name:'[{"text":"Hardcore Mode","color":"dark_red","italic":false}]'}}
+execute if score int iIhHCSlot matches 4 run replaceitem entity @a hotbar.3 redstone{tag:"hc",display:{Name:'[{"text":"Hardcore Mode","color":"dark_red","italic":false}]'}}
+execute if score int iIhHCSlot matches 5 run replaceitem entity @a hotbar.4 redstone{tag:"hc",display:{Name:'[{"text":"Hardcore Mode","color":"dark_red","italic":false}]'}}
+execute if score int iIhHCSlot matches 6 run replaceitem entity @a hotbar.5 redstone{tag:"hc",display:{Name:'[{"text":"Hardcore Mode","color":"dark_red","italic":false}]'}}
+execute if score int iIhHCSlot matches 7 run replaceitem entity @a hotbar.6 redstone{tag:"hc",display:{Name:'[{"text":"Hardcore Mode","color":"dark_red","italic":false}]'}}
+execute if score int iIhHCSlot matches 8 run replaceitem entity @a hotbar.7 redstone{tag:"hc",display:{Name:'[{"text":"Hardcore Mode","color":"dark_red","italic":false}]'}}
+execute if score int iIhHCSlot matches 9 run replaceitem entity @a hotbar.8 redstone{tag:"hc",display:{Name:'[{"text":"Hardcore Mode","color":"dark_red","italic":false}]'}}

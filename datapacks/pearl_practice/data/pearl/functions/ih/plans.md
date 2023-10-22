@@ -1,20 +1,20 @@
 functional requirements before release:
 - [x] remove end island
-- [ ] confirm proper landing
-- [ ] score display
+- [x] confirm proper landing
+- [x] score display
 - [ ] sounds
-- [ ] min and max distance
-- [ ] fall detection
+- [x] min and max distance
+- [x] fall detection
 
 things that would be nice:
-- hardcore
+- [x] hardcore
     miss pearl = reset
-- inventory
-- pearl timeout
-- saved high score
-- distance scoring
+- [x] inventory
+- [ ] pearl timeout
+- [x] saved high score
+- [ ] distance scoring
     score not based on successful throws, but total distance traveled. weighting longer pearl throws more highly
-- pearls thrown stat
+- [ ] pearls thrown stat
     at reset or death
 
 extras/cosmetics (no order):
@@ -26,6 +26,8 @@ extras/cosmetics (no order):
 - practice mode   
     user selected distance
     persistant pearl trails
+- "hot pearl" mode 
+    limited time to throw pearl
     
 
 speedrun mode:
