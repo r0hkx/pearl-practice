@@ -43,7 +43,7 @@ scoreboard objectives add bIhSmallScore dummy
 
 execute unless score b bBwpCheckpoints matches 0.. run scoreboard players set b bBwpCheckpoints 0
 execute unless score b bIhHC matches 0.. run scoreboard players set b bIhHC 0
-execute unless score b bIhSmallScore matches 0.. run scoreboard players set b bIhSmallScore 0
+execute unless score b bIhSmallScore matches 0.. run scoreboard players set b bIhSmallScore 1
 scoreboard players operation b bIhHcScore = b bIhHc
 
 # 0 - none
