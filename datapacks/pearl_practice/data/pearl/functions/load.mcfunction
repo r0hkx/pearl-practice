@@ -98,7 +98,6 @@ execute unless score b bIhInventory matches 0.. run scoreboard players set b bIh
 
 forceload add 1008 0 976 48
 execute in the_end run forceload add 400000 0 400000 0
-execute in the_end run forceload add 0 0 0 0
 
 difficulty peaceful
 
@@ -106,15 +105,20 @@ gamerule fallDamage false
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule doImmediateRespawn true
+gamerule randomTickSpeed 0
 
 time set 6000
 
 weather clear
 
-setblock 0 99 0 diamond_block
-setblock 0 101 1 minecraft:birch_sign[rotation=8,waterlogged=false]{Color:"black",Text4:'{"clickEvent":{"action":"run_command","value":"function pearl:bwp/start"},"text":"Pearl Technique"}',Text3:'{"text":"Bedwars Practice"}',Text2:'{"text":""}',Text1:'{"bold":true,"color":"green","text":"Start"}'}
-setblock 0 100 1 minecraft:birch_sign[rotation=8,waterlogged=false]{Color:"black",Text4:'{"clickEvent":{"action":"run_command","value":"function pearl:bwp/inventory/configure"},"text":"Pearl Technique"}',Text3:'{"text":"Bedwars Practice"}',Text2:'{"text":"Inventory","color":"green","bold":"true"}',Text1:'{"bold":true,"color":"green","text":"Configure"}'}
-setblock -1 101 0 minecraft:birch_sign[rotation=12,waterlogged=false]{Color:"black",Text4:'{"clickEvent":{"action":"run_command","value":"function pearl:ih/start"},"text":"End Island"}',Text3:'{"text":"Hopping"}',Text2:'{"text":""}',Text1:'{"bold":true,"color":"green","text":"Start"}'}
-setblock -1 100 0 minecraft:birch_sign[rotation=12,waterlogged=false]{Color:"black",Text4:'{"clickEvent":{"action":"run_command","value":"function pearl:ih/inventory/configure"},"text":"End Island"}',Text3:'{"text":"Hopping"}',Text2:'{"bold":true,"color":"green","text":"Inventory"}',Text1:'{"bold":true,"color":"green","text":"Configure"}'}
+setblock -24 84 -24 minecraft:structure_block[mode=load]{metadata:"",mirror:"NONE",ignoreEntities:1b,powered:0b,seed:0L,author:"r0hkx",rotation:"NONE",posX:0,mode:"LOAD",posY:1,sizeX:48,posZ:0,integrity:1.0f,showair:0b,name:"minecraft:lobby",sizeY:32,sizeZ:48,showboundingbox:1b}
+setblock -24 83 -24 redstone_block
+setblock -24 84 -24 air
+setblock -24 83 -24 air
+# setblock 0 99 0 diamond_block
+# setblock 0 101 1 minecraft:birch_sign[rotation=8,waterlogged=false]{Color:"black",Text4:'{"clickEvent":{"action":"run_command","value":"function pearl:bwp/start"},"text":"Pearl Technique"}',Text3:'{"text":"Bedwars Practice"}',Text2:'{"text":""}',Text1:'{"bold":true,"color":"green","text":"Start"}'}
+# setblock 0 100 1 minecraft:birch_sign[rotation=8,waterlogged=false]{Color:"black",Text4:'{"clickEvent":{"action":"run_command","value":"function pearl:bwp/inventory/configure"},"text":"Pearl Technique"}',Text3:'{"text":"Bedwars Practice"}',Text2:'{"text":"Inventory","color":"green","bold":"true"}',Text1:'{"bold":true,"color":"green","text":"Configure"}'}
+# setblock -1 101 0 minecraft:birch_sign[rotation=12,waterlogged=false]{Color:"black",Text3:'{"clickEvent":{"action":"run_command","value":"function pearl:ih/start"},"text":"End Island"}',Text4:'{"text":"Hopping"}',Text2:'{"text":""}',Text1:'{"bold":true,"color":"green","text":"Start"}'}
+# setblock -1 100 0 minecraft:birch_sign[rotation=12,waterlogged=false]{Color:"black",Text3:'{"clickEvent":{"action":"run_command","value":"function pearl:ih/inventory/configure"},"text":"End Island"}',Text4:'{"text":"Hopping"}',Text2:'{"bold":true,"color":"green","text":"Inventory"}',Text1:'{"bold":true,"color":"green","text":"Configure"}'}
 
 schedule function pearl:delayed_load 1s
