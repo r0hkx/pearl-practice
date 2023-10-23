@@ -41,11 +41,13 @@ scoreboard objectives add bIhHC dummy
 scoreboard objectives add bIhHcScore dummy
 scoreboard objectives add bIhSmallScore dummy
 scoreboard objectives add bIhZeroScore dummy
+scoreboard objectives add bBwpTimerMsg dummy
 
 execute unless score b bBwpCheckpoints matches 0.. run scoreboard players set b bBwpCheckpoints 0
 execute unless score b bIhHC matches 0.. run scoreboard players set b bIhHC 0
 execute unless score b bIhSmallScore matches 0.. run scoreboard players set b bIhSmallScore 1
 execute unless score b bIhZeroScore matches 0.. run scoreboard players set b bIhZeroScore 0
+execute unless score b bBwpTimerMsg matches 0.. run scoreboard players set b bBwpTimerMsg 0
 scoreboard players operation b bIhHcScore = b bIhHc
 
 # 0 - none
@@ -98,7 +100,6 @@ execute unless score b bIhInventory matches 0.. run scoreboard players set b bIh
 
 forceload add 1008 0 976 48
 execute in the_end run forceload add 400000 0 400000 0
-execute in the_end run forceload add 0 0 0 0
 
 difficulty peaceful
 
@@ -106,15 +107,26 @@ gamerule fallDamage false
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule doImmediateRespawn true
+gamerule randomTickSpeed 0
 
 time set 6000
 
 weather clear
 
-setblock 0 99 0 diamond_block
-setblock 0 101 1 minecraft:birch_sign[rotation=8,waterlogged=false]{Color:"black",Text4:'{"clickEvent":{"action":"run_command","value":"function pearl:bwp/start"},"text":"Pearl Technique"}',Text3:'{"text":"Bedwars Practice"}',Text2:'{"text":""}',Text1:'{"bold":true,"color":"green","text":"Start"}'}
-setblock 0 100 1 minecraft:birch_sign[rotation=8,waterlogged=false]{Color:"black",Text4:'{"clickEvent":{"action":"run_command","value":"function pearl:bwp/inventory/configure"},"text":"Pearl Technique"}',Text3:'{"text":"Bedwars Practice"}',Text2:'{"text":"Inventory","color":"green","bold":"true"}',Text1:'{"bold":true,"color":"green","text":"Configure"}'}
-setblock -1 101 0 minecraft:birch_sign[rotation=12,waterlogged=false]{Color:"black",Text4:'{"clickEvent":{"action":"run_command","value":"function pearl:ih/start"},"text":"End Island"}',Text3:'{"text":"Hopping"}',Text2:'{"text":""}',Text1:'{"bold":true,"color":"green","text":"Start"}'}
-setblock -1 100 0 minecraft:birch_sign[rotation=12,waterlogged=false]{Color:"black",Text4:'{"clickEvent":{"action":"run_command","value":"function pearl:ih/inventory/configure"},"text":"End Island"}',Text3:'{"text":"Hopping"}',Text2:'{"bold":true,"color":"green","text":"Inventory"}',Text1:'{"bold":true,"color":"green","text":"Configure"}'}
+setblock -24 84 -24 minecraft:structure_block[mode=load]{metadata:"",mirror:"NONE",ignoreEntities:1b,powered:0b,seed:0L,author:"r0hkx",rotation:"NONE",posX:0,mode:"LOAD",posY:1,sizeX:48,posZ:0,integrity:1.0f,showair:0b,name:"minecraft:lobby",sizeY:32,sizeZ:48,showboundingbox:1b}
+setblock -24 83 -24 redstone_block
+setblock -24 84 -24 air
+setblock -24 83 -24 air
+# floating signs so don't work with structure block (i think? regardless they don't work)
+setblock 0 101 2 minecraft:birch_wall_sign[facing=north,waterlogged=false]{Color:"black",Text4:'{"text":""}',Text3:'{"text":"Pearl Practice"}',Text2:'{"text":"Welcome to"}',Text1:'{"text":""}'}
+setblock 0 100 2 minecraft:birch_wall_sign[facing=north,waterlogged=false]{Color:"black",Text4:'{"text":"on discord"}',Text3:'{"text":"to @r0hkx"}',Text2:'{"text":"any and all bugs"}',Text1:'{"text":"Please report"}'}
+setblock -1 100 2 minecraft:birch_wall_sign[facing=north,waterlogged=false]{Color:"black",Text4:'{"text":"gamemodes too!"}',Text3:'{"text":"features and/or"}',Text2:'{"text":"request new"}',Text1:'{"text":"Feel free to"}'}
+
+setblock 9 101 -7 minecraft:oak_trapdoor[facing=west,half=top,open=false,powered=false,waterlogged=false]
+# setblock 0 99 0 diamond_block
+# setblock 0 101 1 minecraft:birch_sign[rotation=8,waterlogged=false]{Color:"black",Text4:'{"clickEvent":{"action":"run_command","value":"function pearl:bwp/start"},"text":"Pearl Technique"}',Text3:'{"text":"Bedwars Practice"}',Text2:'{"text":""}',Text1:'{"bold":true,"color":"green","text":"Start"}'}
+# setblock 0 100 1 minecraft:birch_sign[rotation=8,waterlogged=false]{Color:"black",Text4:'{"clickEvent":{"action":"run_command","value":"function pearl:bwp/inventory/configure"},"text":"Pearl Technique"}',Text3:'{"text":"Bedwars Practice"}',Text2:'{"text":"Inventory","color":"green","bold":"true"}',Text1:'{"bold":true,"color":"green","text":"Configure"}'}
+# setblock -1 101 0 minecraft:birch_sign[rotation=12,waterlogged=false]{Color:"black",Text3:'{"clickEvent":{"action":"run_command","value":"function pearl:ih/start"},"text":"End Island"}',Text4:'{"text":"Hopping"}',Text2:'{"text":""}',Text1:'{"bold":true,"color":"green","text":"Start"}'}
+# setblock -1 100 0 minecraft:birch_sign[rotation=12,waterlogged=false]{Color:"black",Text3:'{"clickEvent":{"action":"run_command","value":"function pearl:ih/inventory/configure"},"text":"End Island"}',Text4:'{"text":"Hopping"}',Text2:'{"bold":true,"color":"green","text":"Inventory"}',Text1:'{"bold":true,"color":"green","text":"Configure"}'}
 
 schedule function pearl:delayed_load 1s
