@@ -4,6 +4,7 @@ scoreboard players operation int iIhLastZ = int iIhCurrentZ
 
 summon pig 400000 0 0 {Tags:["random_uuid_x"]}
 execute store result score int iRNG run data get entity @e[type=pig,tag=random_uuid_x,limit=1] UUID[0] 1
+# tellraw @a [{"text":"uuid x: "},{"score":{"objective":"iRNG","name":"int"}}]
 scoreboard players operation int iRNG %= kIhRngRangeX integer
 scoreboard players operation int iRNG -= kIhHalfRngX integer
 scoreboard players operation int iIhCurrentX += int iRNG
@@ -11,6 +12,7 @@ kill @e[tag=random_uuid_x]
 
 summon pig 400000 0 0 {Tags:["random_uuid_y"]}
 execute store result score int iRNG run data get entity @e[type=pig,tag=random_uuid_y,limit=1] UUID[0] 1
+# tellraw @a [{"text":"uuid y: "},{"score":{"objective":"iRNG","name":"int"}}]
 scoreboard players operation int iRNG %= kIhRngRangeY integer
 scoreboard players operation int iRNG -= kIhHalfRngY integer
 scoreboard players operation int iIhCurrentY += int iRNG
@@ -18,6 +20,7 @@ kill @e[tag=random_uuid_y]
 
 summon pig 400000 0 0 {Tags:["random_uuid_z"]}
 execute store result score int iRNG run data get entity @e[type=pig,tag=random_uuid_z,limit=1] UUID[0] 1
+# tellraw @a [{"text":"uuid z: "},{"score":{"objective":"iRNG","name":"int"}}]
 scoreboard players operation int iRNG %= kIhRngRangeZ integer
 scoreboard players operation int iRNG -= kIhHalfRngZ integer
 scoreboard players operation int iIhCurrentZ += int iRNG
