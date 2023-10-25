@@ -1,6 +1,15 @@
 # pearl-practice
- 
+
 minecraft 1.16.1 pearl throwing practice map
+
+## updating instructions
+
+to transfer your high scores and custom inventories to a new version of the map:
+
+1. install new version of the map
+2. copy data folder from old world folder to new world folder
+
+the data folder is where all your saved information is located
 
 ## notes for contributors
 
