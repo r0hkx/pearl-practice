@@ -14,6 +14,9 @@ kill @e[type=egg]
 
 execute if entity @e[type=ender_pearl] store result score int iIhPearlY run data get entity @e[type=ender_pearl,limit=1] Pos[1]
 
+scoreboard players operation int iIhDeathY = int iIhCurrentY
+scoreboard players operation int iIhDeathY -= k20 integer
+
 execute if score int iIhPearlY < int iIhDeathY run function pearl:ih/missed_pearl
 execute if score int yPos < int iIhDeathY run function pearl:ih/fail
 
