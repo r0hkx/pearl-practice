@@ -9,6 +9,5 @@ stats/
 *.dat
 *.dat_old
 *.lock
-*.mca
 standardoptions.txt
 !level.dat
