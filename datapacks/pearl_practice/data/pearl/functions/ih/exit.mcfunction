@@ -9,6 +9,6 @@ kill @e[tag=particle_beam]
 clear @a
 kill @e[type=ender_pearl]
 
-title @a times 0 70 20
+title @a times 0 20 20
 
 scoreboard players set b bPlayingIh 0
