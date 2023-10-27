@@ -15,4 +15,7 @@ schedule function pearl:ih/reset_fail_mode 1t
 
 gamemode adventure @a
 
+execute if score b bPlayedIh matches 0 run tellraw @a {"text":"Render Distance must be 8 or more!","bold":"true"}
+execute if score b bPlayedIh matches 0 run scoreboard players set b bPlayedIh 1
+
 function pearl:ih/tp

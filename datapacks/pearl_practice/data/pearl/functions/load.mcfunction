@@ -33,6 +33,7 @@ scoreboard objectives add bPlayingBwp dummy
 scoreboard objectives add bLanded dummy
 scoreboard objectives add bBwpCheckpoints dummy
 scoreboard objectives add bBwpInventory dummy
+scoreboard objectives add bPlayedIh dummy
 scoreboard objectives add bPlayingIh dummy
 scoreboard objectives add bIhOnGround dummy
 scoreboard objectives add bIhLanded dummy
@@ -43,6 +44,7 @@ scoreboard objectives add bIhSmallScore dummy
 scoreboard objectives add bIhZeroScore dummy
 scoreboard objectives add bBwpTimerMsg dummy
 
+execute unless score b bPlayedIh matches 0.. run scoreboard players set b bPlayedIh 0
 execute unless score b bBwpCheckpoints matches 0.. run scoreboard players set b bBwpCheckpoints 0
 execute unless score b bIhHC matches 0.. run scoreboard players set b bIhHC 0
 execute unless score b bIhSmallScore matches 0.. run scoreboard players set b bIhSmallScore 1
