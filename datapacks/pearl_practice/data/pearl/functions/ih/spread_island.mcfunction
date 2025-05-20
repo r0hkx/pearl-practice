@@ -32,11 +32,11 @@ execute store result entity @e[tag=island_marker,limit=1] Pos[2] double 1 run sc
 
 execute as @e[tag=island_marker] at @s run tp @s ~.5 ~ ~.5
 
-execute at @e[tag=old_island_marker] if entity @e[tag=island_marker,distance=..30] run scoreboard players operation int iIhCurrentX = int iIhLastX
-execute at @e[tag=old_island_marker] if entity @e[tag=island_marker,distance=..30] run scoreboard players operation int iIhCurrentY = int iIhLastY
-execute at @e[tag=old_island_marker] if entity @e[tag=island_marker,distance=..30] run scoreboard players operation int iIhCurrentZ = int iIhLastZ
-execute at @e[tag=old_island_marker] if entity @e[tag=island_marker,distance=..30] run function pearl:ih/spread_island
-execute at @e[tag=old_island_marker] if entity @e[tag=island_marker,distance=50..] run scoreboard players operation int iIhCurrentX = int iIhLastX
-execute at @e[tag=old_island_marker] if entity @e[tag=island_marker,distance=50..] run scoreboard players operation int iIhCurrentY = int iIhLastY
-execute at @e[tag=old_island_marker] if entity @e[tag=island_marker,distance=50..] run scoreboard players operation int iIhCurrentZ = int iIhLastZ
-execute at @e[tag=old_island_marker] if entity @e[tag=island_marker,distance=50..] run function pearl:ih/spread_island
+execute at @e[tag=old_island_marker] if entity @e[tag=island_marker,distance=..15] run scoreboard players operation int iIhCurrentX = int iIhLastX
+execute at @e[tag=old_island_marker] if entity @e[tag=island_marker,distance=..15] run scoreboard players operation int iIhCurrentY = int iIhLastY
+execute at @e[tag=old_island_marker] if entity @e[tag=island_marker,distance=..15] run scoreboard players operation int iIhCurrentZ = int iIhLastZ
+execute at @e[tag=old_island_marker] if entity @e[tag=island_marker,distance=..15] run function pearl:ih/spread_island
+execute at @e[tag=old_island_marker] if entity @e[tag=island_marker,distance=25..] run scoreboard players operation int iIhCurrentX = int iIhLastX
+execute at @e[tag=old_island_marker] if entity @e[tag=island_marker,distance=25..] run scoreboard players operation int iIhCurrentY = int iIhLastY
+execute at @e[tag=old_island_marker] if entity @e[tag=island_marker,distance=25..] run scoreboard players operation int iIhCurrentZ = int iIhLastZ
+execute at @e[tag=old_island_marker] if entity @e[tag=island_marker,distance=25..] run function pearl:ih/spread_island

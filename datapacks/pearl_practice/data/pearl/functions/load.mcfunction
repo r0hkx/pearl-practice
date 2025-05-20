@@ -79,12 +79,12 @@ scoreboard players set kLandedTime integer 10
 scoreboard players set k2 integer 2
 scoreboard players set k20 integer 20
 scoreboard players set kEndIslandCount integer 26
-scoreboard players set kIhRngRangeX integer 100
+scoreboard players set kIhRngRangeX integer 50
 scoreboard players set kIhRngRangeY integer 20
-scoreboard players set kIhRngRangeZ integer 100
-scoreboard players set kIhHalfRngX integer 50
+scoreboard players set kIhRngRangeZ integer 50
+scoreboard players set kIhHalfRngX integer 25
 scoreboard players set kIhHalfRngY integer 10
-scoreboard players set kIhHalfRngZ integer 50
+scoreboard players set kIhHalfRngZ integer 25
 scoreboard players set kIhSpireCount integer 30
 
 execute unless score int iBwpPearlSlot matches 0.. run scoreboard players set int iBwpPearlSlot 1
